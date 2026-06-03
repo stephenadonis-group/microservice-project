@@ -17,10 +17,49 @@
 # Declare variables to be passed into your templates.
 
 images:
-  repository: us-central1-docker.pkg.dev/google-samples/microservices-demo
-  # Overrides the image tag whose default is the chart appVersion.
-  tag: ""
+  adservice:
+    repository: ghcr.io/stephenadonis-group/adservice
+    tag: v0.10.5
 
+  cartservice:
+    repository: ghcr.io/stephenadonis-group/cartservice
+    tag: v0.10.5
+
+  checkoutservice:
+    repository: ghcr.io/stephenadonis-group/checkoutservice
+    tag: v0.10.5
+
+  currencyservice:
+    repository: ghcr.io/stephenadonis-group/currencyservice
+    tag: v0.10.5
+
+  emailservice:
+    repository: ghcr.io/stephenadonis-group/emailservice
+    tag: v0.10.5
+
+  frontend:
+    repository: ghcr.io/stephenadonis-group/frontend
+    tag: v0.10.5
+
+  loadgenerator:
+    repository: ghcr.io/stephenadonis-group/loadgenerator
+    tag: v0.10.5
+
+  paymentservice:
+    repository: ghcr.io/stephenadonis-group/paymentservice
+    tag: v0.10.5
+
+  productcatalogservice:
+    repository: ghcr.io/stephenadonis-group/productcatalogservice
+    tag: v0.10.5
+
+  recommendationservice:
+    repository: ghcr.io/stephenadonis-group/recommendationservice
+    tag: v0.10.5
+
+  shippingservice:
+    repository: ghcr.io/stephenadonis-group/shippingservice
+    tag: v0.10.5
 serviceAccounts:
   # Specifies whether service accounts should be created.
   create: true
