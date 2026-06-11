@@ -108,18 +108,6 @@ They are built using **Microservices Architecture**.
 | [adservice](https://github.com/stephenadonis-group/microservice-project/tree/main/src/adservice) | Java | Provides text ads based on given context words. |
 | [loadgenerator](https://github.com/stephenadonis-group/microservice-project/tree/main/src/loadgenerator) | Python/Locust | Continuously sends requests imitating realistic user shopping flows to the frontend. |
 
-Screenshots:
-
-![images](images/steveshop-1.JPG)
----
-
-
-
-
-
-
-
-
 ---
 [![Watch Demo](/images/demo.gif)
 
@@ -127,15 +115,11 @@ https://www.youtube.com/watch?v=wyMFutRGmvo
 
 ![AWS EKS](https://img.shields.io/badge/AWS-EKS-FF9900?style=for-the-badge&logo=amazon-eks&logoColor=white)
 ![Kubernetes](https://img.shields.io/badge/Kubernetes-Orchestration-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
-
 ![Argo CD](https://img.shields.io/badge/ArgoCD-GitOps-EF7B4D?style=for-the-badge&logo=argo&logoColor=white)
-
 ![Prometheus](https://img.shields.io/badge/Prometheus-Metrics-E6522C?style=for-the-badge&logo=prometheus&logoColor=white)
 ![Grafana](https://img.shields.io/badge/Grafana-Dashboards-F46800?style=for-the-badge&logo=grafana&logoColor=white)
 ![Alertmanager](https://img.shields.io/badge/Alertmanager-Alerts-FF4D4D?style=for-the-badge&logo=prometheus&logoColor=white)
-
 ![ELK Stack](https://img.shields.io/badge/ELK-Logging-005571?style=for-the-badge&logo=elastic&logoColor=white)
-
 ![GHCR](https://img.shields.io/badge/GHCR-GitHub_Container_Registry-181717?style=for-the-badge&logo=github&logoColor=white)
 
 
@@ -1651,6 +1635,8 @@ boutique-image-updater   13s
 Head to ArgoCD UI , and in separte tab run the CI pipeline or trigger it via chnaging the code you should see updated images automaticaaly picked. in ArgoCD
 
 Access the website `app.steveshop.net`
+
+![images](images/steveshop-1.JPG)
 
 It should be accessible.
 
