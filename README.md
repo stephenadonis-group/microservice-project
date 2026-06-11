@@ -109,7 +109,7 @@ They are built using **Microservices Architecture**.
 | [loadgenerator](https://github.com/stephenadonis-group/microservice-project/tree/main/src/loadgenerator) | Python/Locust | Continuously sends requests imitating realistic user shopping flows to the frontend. |
 
 ---
-[![Watch Demo](/images/demo.gif)
+![Watch Demo](/images/demo.gif)
 
 https://www.youtube.com/watch?v=wyMFutRGmvo
 
