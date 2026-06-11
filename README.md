@@ -110,8 +110,8 @@ They are built using **Microservices Architecture**.
 
 Screenshots:
 
-![Alt text](images/steveshop 1.JPG)
-
+![images](images/steveshop 1.JPG)
+![Gitops Project.gif](images/Gitops_Project.gif)
 ---
 
 **Most services are stateless**, and **only the cart uses persistence (Redis)**. Let’s break it down cleanly.
