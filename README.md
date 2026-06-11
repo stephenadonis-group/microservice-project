@@ -293,13 +293,13 @@ There is **NO dedicated “orders database”**.
 Clone the repo:
 
 ```bash
-https://github.com/laxmikantagiri/Production-Grade_GitOps-Driven_Microservices-Demo.git
+https://github.com/stephenadonis-group/microservice-project.git
 ```
 
 chnage directory to terraform:
 
 ```bash
-cd Production-Grade_GitOps-Driven_Microservices-Demo/terraform/
+cd microservice-project/terraform/
 ```
 
 ## Terraform Run
@@ -341,7 +341,7 @@ aws s3api put-bucket-versioning \
 
 # Enable encryption
 aws s3api put-bucket-encryption \
-  --bucket devopsdock-terraform-backend-bucket \
+  --bucket stephen-terraform-backend-bucket \
   --server-side-encryption-configuration '{
     "Rules":[{
       "ApplyServerSideEncryptionByDefault":{
@@ -997,7 +997,7 @@ kubectl apply -f target-grp-config.yaml
 Access directly in the browser:
 
 ```bash
-https://argocd.devopsdock.site
+https://argocd.steveshop.net
 ```
 
 To get the password and user:
@@ -1087,7 +1087,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      IMAGE_NAME: ghcr.io/${{ github.repository_owner }}/microservices-demo/${{ inputs.service }}:sha-${{ github.sha }}
+      IMAGE_NAME: ghcr.io/${{ github.repository_owner }}/${{ inputs.service }}:sha-${{ github.sha }}
 
     steps:
       # -------------------
