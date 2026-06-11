@@ -2141,7 +2141,7 @@ Wait for few momments, Sometimes it takes a bit time to update.
 
 Then access it in your browser.
 
-![images](images/steveshop-3.PNG)
+![images](images/steveshop-2.PNG)
 
 Get Grafana 'admin' user password by running:
 
@@ -2231,7 +2231,7 @@ prometheus-route   ["prometheus.steveshop.net"]   41s
 
 Head to the browser and access it:
 
-![images](images/steveshop-2.PNG)
+![images](images/steveshop-3.PNG)
 
 Check all the availble metrices
 
