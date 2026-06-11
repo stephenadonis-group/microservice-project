@@ -110,7 +110,7 @@ They are built using **Microservices Architecture**.
 
 Screenshots:
 
-![image.png](images/steveshop 1.JPG)
+(images/steveshop 1.JPG)
 
 ---
 
