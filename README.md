@@ -116,7 +116,7 @@ Screenshots:
 ---
 [![Watch Demo](/images/demo.gif)
 
-(https://www.youtube.com/watch?v=wyMFutRGmvo
+https://www.youtube.com/watch?v=wyMFutRGmvo
 
 ![AWS EKS](https://img.shields.io/badge/AWS-EKS-FF9900?style=for-the-badge&logo=amazon-eks&logoColor=white)
 ![Kubernetes](https://img.shields.io/badge/Kubernetes-Orchestration-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
