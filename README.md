@@ -1414,7 +1414,7 @@ kubectl apply -f boutique-app.yaml
 
 Check the ArgoCD UI you should see the app visible there. And all Synced.
 
-![image.png](images/steveshop-7.JPG)
+![images](images/steveshop-7.PNG)
 
 # Now Lets integrate the CI with CD
 
@@ -1636,7 +1636,7 @@ Head to ArgoCD UI , and in separte tab run the CI pipeline or trigger it via chn
 
 Access the website `app.steveshop.net`
 
-![images](images/steveshop-1.JPG)
+![images](images/steveshop-1.PNG)
 
 It should be accessible.
 
@@ -2141,7 +2141,7 @@ Wait for few momments, Sometimes it takes a bit time to update.
 
 Then access it in your browser.
 
-![image.png](images/steveshop-3.JPG)
+![images](images/steveshop-3.PNG)
 
 Get Grafana 'admin' user password by running:
 
@@ -2231,7 +2231,7 @@ prometheus-route   ["prometheus.steveshop.net"]   41s
 
 Head to the browser and access it:
 
-![image.png](images/steveshop-2.JPG)
+![images](images/steveshop-2.PNG)
 
 Check all the availble metrices
 
