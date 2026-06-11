@@ -275,9 +275,7 @@ There is **NO dedicated “orders database”**.
 
 # Project Architecture
 
-![Gitops Project.gif](docs/images/Gitops_Project.gif)
-
-![Gitops Project.drawio.png](docs/images/Gitops_Project.png)
+![Gitops Project.gif](images/Gitops_Project.gif)
 ---
 ---
 ---
