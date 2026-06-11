@@ -110,8 +110,7 @@ They are built using **Microservices Architecture**.
 
 Screenshots:
 
-![images](images/steveshop 1.JPG)
-![Gitops Project.gif](images/Gitops_Project.gif)
+![images](images/steveshop-1.JPG)
 ---
 
 **Most services are stateless**, and **only the cart uses persistence (Redis)**. Let’s break it down cleanly.
@@ -850,7 +849,7 @@ configs:
     # -- List of hostnames for the HTTPRoute
     # @default -- `[]` (See [values.yaml])
     hostnames:
-      - argocd.devopsdock.site
+      - argocd.steveshop.net
     # -- HTTPRoute rules configuration
     # @default -- `[]` (See [values.yaml])
     rules:
@@ -1405,7 +1404,7 @@ kubectl apply -f boutique-app.yaml
 
 Check the ArgoCD UI you should see the app visible there. And all Synced.
 
-![image.png](images/steveshop 7.JPG)
+![image.png](images/steveshop-7.JPG)
 
 # Now Lets integrate the CI with CD
 
@@ -2130,7 +2129,7 @@ Wait for few momments, Sometimes it takes a bit time to update.
 
 Then access it in your browser.
 
-![image.png](images/steveshop 3.JPG)
+![image.png](images/steveshop-3.JPG)
 
 Get Grafana 'admin' user password by running:
 
@@ -2220,7 +2219,7 @@ prometheus-route   ["prometheus.steveshop.net"]   41s
 
 Head to the browser and access it:
 
-![image.png](images/steveshop 2.JPG)
+![image.png](images/steveshop-2.JPG)
 
 Check all the availble metrices
 
