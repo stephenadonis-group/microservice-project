@@ -113,6 +113,8 @@ Screenshots:
 ![images](images/steveshop-1.JPG)
 ---
 
+
+[![Watch Demo](./images/demo.gif)](https://www.youtube.com/watch?v=wyMFutRGmvo
 **Most services are stateless**, and **only the cart uses persistence (Redis)**. Let’s break it down cleanly.
 
 # How data works in `microservices-demo`
