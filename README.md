@@ -130,6 +130,8 @@ Screenshots:
 ![ELK Stack](https://img.shields.io/badge/ELK-Logging-005571?style=for-the-badge&logo=elastic&logoColor=white)
 
 ![GHCR](https://img.shields.io/badge/GHCR-GitHub_Container_Registry-181717?style=for-the-badge&logo=github&logoColor=white)
+
+
 **Most services are stateless**, and **only the cart uses persistence (Redis)**. Let’s break it down cleanly.
 
 # How data works in `microservices-demo`
