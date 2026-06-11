@@ -113,8 +113,23 @@ Screenshots:
 ![images](images/steveshop-1.JPG)
 ---
 
+---
+[![Watch Demo](/images/demo.gif)
 
-[![Watch Demo](./images/demo.gif)](https://www.youtube.com/watch?v=wyMFutRGmvo
+(https://www.youtube.com/watch?v=wyMFutRGmvo
+
+![AWS EKS](https://img.shields.io/badge/AWS-EKS-FF9900?style=for-the-badge&logo=amazon-eks&logoColor=white)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-Orchestration-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
+
+![Argo CD](https://img.shields.io/badge/ArgoCD-GitOps-EF7B4D?style=for-the-badge&logo=argo&logoColor=white)
+
+![Prometheus](https://img.shields.io/badge/Prometheus-Metrics-E6522C?style=for-the-badge&logo=prometheus&logoColor=white)
+![Grafana](https://img.shields.io/badge/Grafana-Dashboards-F46800?style=for-the-badge&logo=grafana&logoColor=white)
+![Alertmanager](https://img.shields.io/badge/Alertmanager-Alerts-FF4D4D?style=for-the-badge&logo=prometheus&logoColor=white)
+
+![ELK Stack](https://img.shields.io/badge/ELK-Logging-005571?style=for-the-badge&logo=elastic&logoColor=white)
+
+![GHCR](https://img.shields.io/badge/GHCR-GitHub_Container_Registry-181717?style=for-the-badge&logo=github&logoColor=white)
 **Most services are stateless**, and **only the cart uses persistence (Redis)**. Let’s break it down cleanly.
 
 # How data works in `microservices-demo`
