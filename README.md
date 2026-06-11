@@ -96,17 +96,17 @@ They are built using **Microservices Architecture**.
 
 | **Service** | **Language** | **Description** |
 | --- | --- | --- |
-| [frontend](https://github.com/laxmikantagiri/Production-Grade_GitOps-Driven_Microservices-Demo/blob/main/src/frontend) | Go | Exposes an HTTP server to serve the website. Does not require signup/login and generates session IDs for all users automatically. |
-| [cartservice](https://github.com/laxmikantagiri/Production-Grade_GitOps-Driven_Microservices-Demo/blob/main/src/cartservice) | C# | Stores the items in the user's shopping cart in Redis and retrieves it. |
-| [productcatalogservice](https://github.com/laxmikantagiri/Production-Grade_GitOps-Driven_Microservices-Demo/blob/main/src/productcatalogservice) | Go | Provides the list of products from a JSON file and ability to search products and get individual products. |
-| [currencyservice](https://github.com/laxmikantagiri/Production-Grade_GitOps-Driven_Microservices-Demo/blob/main/src/currencyservice) | Node.js | Converts one money amount to another currency. Uses real values fetched from European Central Bank. It's the highest QPS service. |
-| [paymentservice](https://github.com/laxmikantagiri/Production-Grade_GitOps-Driven_Microservices-Demo/blob/main/src/paymentservice) | Node.js | Charges the given credit card info (mock) with the given amount and returns a transaction ID. |
-| [shippingservice](https://github.com/laxmikantagiri/Production-Grade_GitOps-Driven_Microservices-Demo/blob/main/src/shippingservice) | Go | Gives shipping cost estimates based on the shopping cart. Ships items to the given address (mock) |
-| [emailservice](https://github.com/laxmikantagiri/Production-Grade_GitOps-Driven_Microservices-Demo/blob/main/src/emailservice) | Python | Sends users an order confirmation email (mock). |
-| [checkoutservice](https://github.com/laxmikantagiri/Production-Grade_GitOps-Driven_Microservices-Demo/blob/main/src/checkoutservice) | Go | Retrieves user cart, prepares order and orchestrates the payment, shipping and the email notification. |
-| [recommendationservice](https://github.com/laxmikantagiri/Production-Grade_GitOps-Driven_Microservices-Demo/blob/main/src/recommendationservice) | Python | Recommends other products based on what's given in the cart. |
-| [adservice](https://github.com/laxmikantagiri/Production-Grade_GitOps-Driven_Microservices-Demo/blob/main/src/adservice) | Java | Provides text ads based on given context words. |
-| [loadgenerator](https://github.com/laxmikantagiri/Production-Grade_GitOps-Driven_Microservices-Demo/blob/main/src/loadgenerator) | Python/Locust | Continuously sends requests imitating realistic user shopping flows to the frontend. |
+| [frontend](https://github.com/stephenadonis-group/microservice-project/tree/main/src/frontend) | Go | Exposes an HTTP server to serve the website. Does not require signup/login and generates session IDs for all users automatically. |
+| [cartservice](https://github.com/stephenadonis-group/microservice-project/tree/main/src/cartservice) | C# | Stores the items in the user's shopping cart in Redis and retrieves it. |
+| [productcatalogservice](https://github.com/stephenadonis-group/microservice-project/tree/main/src/productcatalogservice) | Go | Provides the list of products from a JSON file and ability to search products and get individual products. |
+| [currencyservice](https://github.com/stephenadonis-group/microservice-project/tree/main/src/currencyservice) | Node.js | Converts one money amount to another currency. Uses real values fetched from European Central Bank. It's the highest QPS service. |
+| [paymentservice](https://github.com/stephenadonis-group/microservice-project/tree/main/src/paymentservice) | Node.js | Charges the given credit card info (mock) with the given amount and returns a transaction ID. |
+| [shippingservice](https://github.com/stephenadonis-group/microservice-project/tree/main/src/shippingservice) | Go | Gives shipping cost estimates based on the shopping cart. Ships items to the given address (mock) |
+| [emailservice](https://github.com/stephenadonis-group/microservice-project/tree/main/src/emailservice) | Python | Sends users an order confirmation email (mock). |
+| [checkoutservice](https://github.com/stephenadonis-group/microservice-project/tree/main/src/checkoutservice) | Go | Retrieves user cart, prepares order and orchestrates the payment, shipping and the email notification. |
+| [recommendationservice](https://github.com/stephenadonis-group/microservice-project/tree/main/src/recommendationservice) | Python | Recommends other products based on what's given in the cart. |
+| [adservice](https://github.com/stephenadonis-group/microservice-project/tree/main/src/adservice) | Java | Provides text ads based on given context words. |
+| [loadgenerator](https://github.com/stephenadonis-group/microservice-project/tree/main/src/loadgenerator) | Python/Locust | Continuously sends requests imitating realistic user shopping flows to the frontend. |
 
 Screenshots:
 
@@ -1405,7 +1405,7 @@ kubectl apply -f boutique-app.yaml
 
 Check the ArgoCD UI you should see the app visible there. And all Synced.
 
-![image.png](docs/images/image%203.png)
+![image.png](images/steveshop 7.JPG)
 
 # Now Lets integrate the CI with CD
 
@@ -1625,10 +1625,6 @@ boutique-image-updater   13s
 
 Head to ArgoCD UI , and in separte tab run the CI pipeline or trigger it via chnaging the code you should see updated images automaticaaly picked. in ArgoCD
 
-![image.png](docs/images/image%204.png)
-
-![image.png](docs/images/image%205.png)
-
 Access the website `app.steveshop.net`
 
 It should be accessible.
@@ -1653,55 +1649,37 @@ If you have no slack accounts then this will ask you to setup that first.
 
 Sign in with google
 
-![image.png](docs/images/image%206.png)
-
 Create a workspace
-
-![image.png](docs/images/image%207.png)
-
-![image.png](docs/images/image%208.png)
 
 Create a dedicated channel where you want to receive the alerts.
 
 **`#alertmanager`**
 
-![image.png](docs/images/image%209.png)
+![image.png](images/steveshop 4.JPG)
 
 Keep it public.
 
-![image.png](docs/images/image%2010.png)
 
 After this is done
 
 Go to [https://api.slack.com/apps](https://api.slack.com/apps) again.
 
-![image.png](docs/images/image%2011.png)
-
 From scartch
-
-![image.png](docs/images/image%2012.png)
 
 Give name and choose the workspace and create.
 
-![image.png](docs/images/image%2013.png)
-
 Head to **`Incoming Webhook`**
-
-![image.png](docs/images/image%2014.png)
 
 Turn it ON
 
-![image.png](docs/images/image%2015.png)
 
 Scroll down then Click on **`Add New Webhook`**
 
 Select the channel and then allow.
 
-![image.png](docs/images/image%2016.png)
 
 Copy the Webhook and keep it somewhere pasted.
 
-![image.png](docs/images/image%2017.png)
 
 Don’t expose a **real Slack webhook URL** in your message.
 
@@ -2087,11 +2065,7 @@ kubectl get svc -n monitoring
 
 You should see the Alert Firing messages and Integration messege on slack.
 
-![image.png](docs/images/image%2018.png)
-
 You sill see both the resolved and firing alerts as we have set `resolved=true`
-
-![image.png](docs/images/image%2019.png)
 
 ### Now Lets Expose the **`Grafana`** and **`Prometheus`** and access the UI of them
 
@@ -2156,7 +2130,7 @@ Wait for few momments, Sometimes it takes a bit time to update.
 
 Then access it in your browser.
 
-![image.png](docs/images/image%2020.png)
+![image.png](images/steveshop 3.JPG)
 
 Get Grafana 'admin' user password by running:
 
@@ -2164,19 +2138,12 @@ Get Grafana 'admin' user password by running:
 kubectl --namespace monitoring get secrets kube-prometheus-stack-grafana -o jsonpath="{.data.admin-password}" | base64 -d ; echo
 ```
 
-![image.png](docs/images/image%2021.png)
 
 You can see all the available metrices in the “Drilldown” section
 
-![image.png](docs/images/image%2022.png)
-
 Explore the precreated Dashboards
 
-![image.png](docs/images/image%2023.png)
-
 Check the graph pod and node wise
-
-![image.png](docs/images/image%2024.png)
 
 Now similarly lets expose the `Prometheus`:
 
@@ -2253,13 +2220,9 @@ prometheus-route   ["prometheus.steveshop.net"]   41s
 
 Head to the browser and access it:
 
-![image.png](docs/images/image%2025.png)
+![image.png](images/steveshop 2.JPG)
 
 Check all the availble metrices
-
-![image.png](docs/images/image%2026.png)
-
-![image.png](docs/images/image%2027.png)
 
 ## 2. Logging
 
@@ -2730,7 +2693,7 @@ Verify:
 ```bash
 kubectl get httproute -n logging
 NAME           HOSTNAMES               AGE
-kibana-route   ["kibana.devopsdock.site"]   74s
+kibana-route   ["kibana.steveshop,net"]   74s
 ```
 
 ```bash
@@ -2739,9 +2702,7 @@ NAME               SERVICE-NAME         AGE
 kibana-tg-config   eck-kibana-kb-http   85s
 ```
 
-Head to the browser and access you kibana UI using the host name “`kibana.dsvault.in`”
-
-![image.png](docs/images/image%2028.png)
+Head to the browser and access you kibana UI using the host name “`kibana.steveshop.net`”
 
 The defaukt user is  **`elastic` .** Get you password from the below command
 
@@ -2751,33 +2712,21 @@ kubectl get secret eck-elasticsearch-es-elastic-user -n logging -o go-template='
 
 Go to discover section:
 
-![image.png](docs/images/image%2029.png)
-
 In search field section search for “`namespace`” and the select `kubernetes.namespace`
 
 Click on that and select your app namepsace
 
-![image.png](docs/images/image%2030.png)
-
 Click on the plus icon to view the logs from the namespace
 
-![image.png](docs/images/image%2031.png)
 
 See the logs:
 
-![image.png](docs/images/image%2032.png)
 
 Expand it to see the full logs i json or table format:
-
-![image.png](docs/images/image%2033.png)
 
 Similarly you can check any pod’s logs by adding the right field, You can even filter to by adding multiple labels.
 
 For example i can see the logs for `frontend` app, by adding the field `app`
-
-![image.png](docs/images/image%2034.png)
-
-![image.png](docs/images/image%2035.png)
 
 Now i can only see `frontend` pod’s log in the `boutique-app` namespace
 
@@ -3106,11 +3055,6 @@ You should also scale:
 
 Same HPA structure, just change `name`.
 
-![image.png](docs/images/image%2036.png)
-
-![image.png](docs/images/image%203.png)
-
-![image.png](docs/images/image%2037.png)
 
 ---
 
@@ -3173,13 +3117,13 @@ echo <TOKEN> | docker login ghcr.io \
 Tag/Retag your image:
 
 ```bash
-docker tag us-central1-docker.pkg.dev/google-samples/microservices-demo/adservice:v0.10.4 ghcr.io/laxmikantagiri/microservices-demo/adservice:v0.10.4
+docker tag us-central1-docker.pkg.dev/google-samples/adservice:v0.10.4 ghcr.io/stephenadonis-group/microservices-demo/adservice:v0.10.4
 ```
 
 Push the image:
 
 ```bash
-  docker push ghcr.io/laxmikantagiri/microservices-demo/adservice:v0.10.4
+  docker push ghcr.io/stephenadonis-group/adservice:v0.10.5
 ```
 </details>
 
@@ -3244,7 +3188,7 @@ oci://ghcr.io/<OWNER>/charts/onlineboutique
 Example:
 
 ```
-oci://ghcr.io/laxmikanta/charts/onlineboutique
+oci://ghcr.io/stephenadonis-group/charts/onlineboutique
 ```
 
 Do :
@@ -3256,14 +3200,14 @@ helm package .
 You will see the package will get created with `.tgz`  format
 
 ```bash
-ubuntu@ip-10-0-101-164:~/Production-Grade_GitOps-Driven_Microservices-Demo/helm-chart$ ls
-Chart.yaml  README.md  onlineboutique-0.10.4.tgz  templates  values.yaml
+ubuntu@ip-10-0-101-164:~/microservice-project/helm-chart$ ls
+Chart.yaml  README.md  onlineboutique-0.10.5.tgz  templates  values.yaml
 ```
 
 Push to the repository:
 
 ```bash
-helm push onlineboutique-0.10.4.tgz oci://ghcr.io/laxmikantagiri
+helm push onlineboutique-0.10.5.tgz oci://ghcr.io/stephenadonis-group
 ```
 
 Now you can directly install the package using the below command
@@ -3271,7 +3215,7 @@ Now you can directly install the package using the below command
 (Make sure its public)
 
 ```bash
-helm install boutique oci://ghcr.io/laxmikantagiri/onlineboutique --version 0.10.4
+helm install boutique oci://ghcr.io/stephenadonis-group/onlineboutique --version 0.10.5
 ```
 </details>
 
