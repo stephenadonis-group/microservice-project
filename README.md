@@ -1024,8 +1024,6 @@ Once you have the images in the github packages, connect them to the repository.
 
 So that it shows up and linked to your repo like this.
 
-![image-magik.png](docs/images/image-magik.png)
-
 Go to the image →Package Setting, and give permission to the repo to run action.
 
 When you gave **Write access** under:
@@ -1043,15 +1041,9 @@ Think of it as:
 
 Without it → push fails even if workflow has write permission.
 
-![image.png](docs/images/image.png)
-
 Add the repository
 
-![image.png](docs/images/image%201.png)
-
 Give the package write permission.
-
-![image.png](docs/images/image%202.png)
 
 As the permission is set now. We will add the workflow files now.
 
@@ -1425,7 +1417,7 @@ So whenever CI part is done and the image is pushed to the registry the same ima
 #currently using the the older version of the image "v0.10.4"
 kubectl describe po frontend-7dd5db5f5-xb7g8 -n boutique-app | grep "image"
 
-Normal  Pulled     51m   kubelet            spec.containers{server}: Container image "ghcr.io/laxmikantagiri/microservices-demo/frontend:v0.10.4" already present on machine
+Normal  Pulled     51m   kubelet            spec.containers{server}: Container image "ghcr.io/stephenadonis-group/frontend:v0.10.5" already present on machine
 ```
 
 ## Install Argo Image Updater.
@@ -1637,7 +1629,7 @@ Head to ArgoCD UI , and in separte tab run the CI pipeline or trigger it via chn
 
 ![image.png](docs/images/image%205.png)
 
-Access the website `app.devopsdock.site`
+Access the website `app.steveshop.net`
 
 It should be accessible.
 
